@@ -54,6 +54,10 @@ public class JuliaSimulation extends BaseSimulation {
 
             case ZOOM_FWD -> visuals.zoom += zoomStep;
             case ZOOM_BWD -> visuals.zoom -= zoomStep;
+
+            case ITER_10 -> visuals.iterations = 10;
+            case ITER_100 -> visuals.iterations = 100;
+            case ITER_1000 -> visuals.iterations = 1000;
         }
         visuals.dirty = true;
     }
