@@ -2,21 +2,31 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="+assets" />
+      <artifact name="JuliaExplorerJ_withAssets" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b80933f-a0f1-44c7-b267-480fe242fd42" name="Changes" comment="Base port MVP">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/_assets.xml" afterDir="false" />
+    <list default="true" id="0b80933f-a0f1-44c7-b267-480fe242fd42" name="Changes" comment="User can now change fractal iterations (1, 2, 3 powers of ten)">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JuliaExplorerJ_withAssets.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/shelved.patch" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assets/django.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lwjglx-debug-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graphics/Texture2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/math/Matrix2f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/math/Matrix3f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/math/Matrix4f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/math/Vector3f.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/math/Vector4f.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="c8ed231b-16fe-4114-86d2-c83f14084309" name="libs" comment="libs">
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/LICENSE" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/assimp_license.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/bgfx_license.txt" afterDir="false" />
@@ -62,12 +72,6 @@
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-freetype-natives-windows.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-freetype-sources.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-freetype.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-glfw-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-glfw-natives-linux.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-glfw-natives-macos.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-glfw-natives-windows.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-glfw-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-glfw.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz-javadoc.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz-natives-linux.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-harfbuzz-natives-macos.jar" afterDir="false" />
@@ -138,9 +142,6 @@
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-nanovg-natives-windows.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-nanovg-sources.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-nanovg.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-natives-linux.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-natives-macos.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-natives-windows.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-nfd-javadoc.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-nfd-natives-linux.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-nfd-natives-macos.jar" afterDir="false" />
@@ -165,18 +166,6 @@
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opencl-javadoc.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opencl-sources.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opencl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengl-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengl-natives-linux.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengl-natives-macos.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengl-natives-windows.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengl-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengles-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengles-natives-linux.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengles-natives-macos.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengles-natives-windows.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengles-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-opengles.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-openvr-javadoc.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-openvr-natives-linux.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-openvr-natives-macos.jar" afterDir="false" />
@@ -223,7 +212,6 @@
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-shaderc-natives-windows.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-shaderc-sources.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-shaderc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-sources.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-spvc-javadoc.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-spvc-natives-linux.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/lwjgl-spvc-natives-macos.jar" afterDir="false" />
@@ -311,14 +299,6 @@
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/xxhash_license.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/yoga_license.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lwjgl-release-3.3.2-custom/zstd_license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lwjglx-debug-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graphics/Texture2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/math/Matrix2f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/math/Matrix3f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/math/Matrix4f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/math/Vector3f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/math/Vector4f.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,8 +315,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
   <component name="GitRewordedCommitMessages">
     <option name="onto" value="a0d00bc2f99c13e779290cbcb35c78c34ee29d82" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2251d34d-a372-40b3-9535-ea763e9259d9" />
+        <option name="url" value="https://github.com/splatpope/JuliaExplorerJ.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -347,17 +340,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Splatpope/IdeaProjects/JuliaExplorerJ/assets",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Splatpope/IdeaProjects/JuliaExplorerJ/assets&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Splatpope\IdeaProjects\JuliaExplorerJ\assets" />
@@ -379,6 +372,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0b80933f-a0f1-44c7-b267-480fe242fd42" name="Changes" comment="" />
+      <changelist id="c8ed231b-16fe-4114-86d2-c83f14084309" name="libs" comment="" />
       <created>1681218489660</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -391,7 +385,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682611988211</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added artifact that includes assets">
+      <created>1682612256948</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682612256948</updated>
+    </task>
+    <task id="LOCAL-00003" summary="User can now change fractal iterations (1, 2, 3 powers of ten)">
+      <created>1682618912291</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682618912291</updated>
+    </task>
+    <task id="LOCAL-00004" summary="libs">
+      <created>1682636435518</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682636435518</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -418,8 +433,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added artifact that includes assets" />
     <MESSAGE value="Base port MVP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base port MVP" />
+    <MESSAGE value="Added artifact that includes assets" />
+    <MESSAGE value="User can now change fractal iterations (1, 2, 3 powers of ten)" />
+    <MESSAGE value="libs" />
+    <option name="LAST_COMMIT_MESSAGE" value="libs" />
   </component>
 </project>

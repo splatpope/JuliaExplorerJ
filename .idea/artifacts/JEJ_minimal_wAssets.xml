@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="JEJ_minimal_wAssets">
+    <output-path>$PROJECT_DIR$/out/artifacts/JEJ_minimal_wAssets</output-path>
+    <root id="root">
+      <element id="directory" name="assets">
+        <element id="dir-copy" path="$PROJECT_DIR$/assets" />
+      </element>
+      <element id="artifact" artifact-name="JuliaExplorerJ_minimal" />
+    </root>
+  </artifact>
+</component>

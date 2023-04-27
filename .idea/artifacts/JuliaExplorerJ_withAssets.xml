@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="JuliaExplorerJ_withAssets">
+    <output-path>$PROJECT_DIR$/out/artifacts/JuliaExplorerJ_withAssets</output-path>
+    <root id="root">
+      <element id="directory" name="assets">
+        <element id="dir-copy" path="$PROJECT_DIR$/assets" />
+      </element>
+      <element id="artifact" artifact-name="JuliaExplorerJ:jar" />
+    </root>
+  </artifact>
+</component>
